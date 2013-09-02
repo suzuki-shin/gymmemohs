@@ -1,0 +1,26 @@
+* 作りたいもの
+ジム活動記録アプリ
+
+* 設計
+** DB
+*** User ユーザー
+*** Item 種目
+- user User ユーザー
+- name Text 種目名
+- unit_name Text 単位名
+- load Int 負荷
+- is_active Bool
+*** exercise 運動記録
+- user User
+- item Item
+- value Int
+- datetime Datetime
+
+** 機能
+- ログイン(gmail)	/user/login
+- 種目追加			/item/add
+- 種目変更			/item/edit
+- 種目一覧			/item/list
+- 運動記録追加		/exercise/add
+- 運動記録変更		/exercise/edit
+- 運動記録一覧		/exercise/list
