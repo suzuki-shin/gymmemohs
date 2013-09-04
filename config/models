@@ -8,5 +8,16 @@ Email
     user UserId Maybe
     verkey Text Maybe
     UniqueEmail email
+Item
+    user UserId
+    name Text
+    unitName Text
+    load Int
+    loadUnitName Text
+    isActive Bool default=true
+Exercise
+	item ItemId
+	value Int
+	created Day
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)
