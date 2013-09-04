@@ -1,0 +1,6 @@
+<h1>種目追加
+<p>#{str}
+<a href="@{HomeR}">ホームへ
+<form action=@{ItemR} method="POST" enctype="#{enctype}">
+    ^{widget}
+    <input type="submit" value="送信">

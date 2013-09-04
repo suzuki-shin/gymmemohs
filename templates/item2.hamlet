@@ -1,0 +1,8 @@
+<h1>とりあえずYesod
+<p>文字列値1 : #{textVal1 form}
+$maybe justVal <- textVal2 form
+    <p>文字列値2 : #{justVal}
+$nothing
+    <p>(文字列値2は未入力)
+<p>数値 : #{numVal form}
+<p>チェックボックス(Bool) : #{boolVal form}

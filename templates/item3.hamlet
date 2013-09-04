@@ -1,0 +1,5 @@
+<h1>種目追加
+<p>種目名 : #{name form}
+<p>単位名 : #{unitName form}
+<p>負荷 : #{load form}
+<p>負荷単位名 : #{loadUnitName form}
