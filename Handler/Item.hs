@@ -6,13 +6,6 @@ import Yesod.Auth
 import Yesod.Auth.BrowserId
 import Yesod.Auth.GoogleEmail
 
--- data ExampleFormModel = ExampleFormModel
---     { textVal1        :: Text
---     , textVal2        :: Maybe Text
---     , numVal          :: Int
---     , boolVal         :: Bool
---     }
-
 data ItemFormModel = ItemFormModel
     { name :: Text
     , unitName :: Text

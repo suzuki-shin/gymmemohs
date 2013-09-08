@@ -7,3 +7,4 @@
 / HomeR GET POST
 /item ItemR GET POST
 
+/exe ExerciseR GET POST
