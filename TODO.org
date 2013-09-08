@@ -1,7 +1,9 @@
 - [X] bootstrap入れる
 - [X] item保存できるようにする
 - [X] exercise保存できるようにする
-- [ ] 
-- [ ] 
+- [ ] 認証機能ちゃんとする
+- [ ] item list画面実装する。
+- [ ] item list画面でexerciseをPOSTできるようにする
+- [ ] デザイン整える
 - [ ] 
 
