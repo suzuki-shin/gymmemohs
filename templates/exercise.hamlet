@@ -1,0 +1,5 @@
+<h1>記録追加
+<a href="@{HomeR}">ホームへ
+<form action=@{ExerciseR} method="POST" enctype="#{enctype}">
+    ^{widget}
+    <input type="submit" value="送信">
