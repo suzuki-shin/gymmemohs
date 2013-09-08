@@ -1,5 +1,5 @@
-- [ ] bootstrap入れる
-- [ ] 
+- [X] bootstrap入れる
+- [X] item保存できるようにする
 - [ ] 
 - [ ] 
 - [ ] 
