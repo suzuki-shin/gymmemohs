@@ -119,6 +119,17 @@ instance Yesod App where
 
     makeLogger = return . appLogger
 
+    isAuthorized ItemR _ = isLoggedIn
+    isAuthorized ExerciseR _ = isLoggedIn
+    isAuthorized _ _ = return Authorized
+
+
+isLoggedIn = do
+    mu <- maybeAuthId
+    return $ case mu of
+        Nothing -> AuthenticationRequired
+        Just _ -> Authorized
+
 -- How to run database actions.
 instance YesodPersist App where
     type YesodPersistBackend App = SqlPersistT
