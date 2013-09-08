@@ -6,5 +6,6 @@
 
 / HomeR GET POST
 /item ItemR GET POST
+/items ItemsR GET
 
 /exe ExerciseR GET POST

@@ -41,3 +41,11 @@ postItemR = do
 
 itemFormToItem :: ItemFormModel -> UserId -> Item
 itemFormToItem form userId = Item userId (name form) (unitName form) (load form) (loadUnitName form) True
+
+getItemsR :: Handler Html
+getItemsR = do
+    userId <- requireAuthId
+    items <- runDB $ selectList [ItemUser ==. userId] [Desc ItemId]
+    defaultLayout $ do
+        setTitle "Items"
+        $(widgetFile "items")

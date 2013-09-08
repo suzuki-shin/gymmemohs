@@ -1,0 +1,15 @@
+<h1>Item List Page
+<table>
+    <tr>
+        <th>Name
+        <th>unitName
+        <th>load
+        <th>loadUnitName
+        <th>isActive
+    $forall item <- items
+      <tr>
+        <td>#{itemName $ entityVal item}
+        <td>#{itemUnitName $ entityVal item}
+        <td>#{itemLoad $ entityVal item}
+        <td>#{itemLoadUnitName $ entityVal item}
+        <td>#{show $ itemIsActive $ entityVal item}
