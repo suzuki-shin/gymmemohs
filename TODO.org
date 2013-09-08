@@ -2,7 +2,7 @@
 - [X] item保存できるようにする
 - [X] exercise保存できるようにする
 - [X] 認証機能ちゃんとする
-- [ ] item list画面実装する。
+- [X] item list画面実装する。
 - [ ] item list画面でexerciseをPOSTできるようにする
 - [ ] デザイン整える
 - [ ] 
