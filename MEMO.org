@@ -4,17 +4,26 @@
 * 設計
 ** DB
 *** User ユーザー
+
 *** Item 種目
-- user User ユーザー
+- user UserId ユーザー
 - name Text 種目名
-- unit_name Text 単位名
-- load Int 負荷
-- is_active Bool
+- unit UnitId 単位
+- isActive Bool
+
+*** Load 負荷の種類
+- name
+
+*** Unit 単位の種類
+- name
+
 *** exercise 運動記録
-- user User
-- item Item
+- user UserId
+- item ItemId
 - value Int
 - datetime Datetime
+- load LoadId 負荷の種類
+- loadValue Int 負荷値
 
 ** 機能
 - ログイン(gmail)	/user/login
@@ -24,3 +33,11 @@
 - 運動記録追加		/exercise/add
 - 運動記録変更		/exercise/edit
 - 運動記録一覧		/exercise/list
+
+- / HomeR GET トップページ(itemlistとexercise addのform, item addのform)
+- /item/add ItemAddR POST (item add)
+- /exercise/add ExerciseAddR POST (exercise add)
+- /load/add LoadAddR GET POST (load add)
+- /unit/add UnitAddR GET POST (unit add)
+
+
